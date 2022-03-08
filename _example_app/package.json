@@ -1,0 +1,19 @@
+{
+  "name": "_example_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

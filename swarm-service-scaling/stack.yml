@@ -1,0 +1,6 @@
+version: "3"
+services:
+  example-app-service:
+    image: dca-example-app:latest
+    deploy:
+      replicas: 3

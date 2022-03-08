@@ -1,0 +1,8 @@
+FROM busybox
+
+WORKDIR /app
+
+ENTRYPOINT ["sleep"]
+
+CMD ["5"]
+
