@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+
+  example-app:
+    build:
+      context: ../_example_app
+      dockerfile: Dockerfile
+    networks:
+      - mycustomnet
+    depends_on:
+      - db
+    volumes:
+      - type: volume
+        source: mycustomvolume
+        target: /app/custom
+        volume:
+          nocopy: true
+
+  db:
+    image: mongo
+    networks:
+      - mycustomnet
+
+networks:
+  mycustomnet:
+    driver: bridge
+
+volumes:
+  mycustomvolume:
